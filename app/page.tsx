@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Navbar from "../components/Navbar";
 
 export default function Home() {
@@ -6,35 +7,33 @@ export default function Home() {
       <Navbar />
 
       {/* Hero */}
-      <section className="px-6 py-32 text-center">
-        <div className="mx-auto max-w-5xl">
-          <span className="rounded-full border border-gray-700 px-4 py-2 text-sm text-gray-400">
-            AI • Automation • SaaS
-          </span>
+      <section className="px-6 py-24 text-center">
+  <div className="mx-auto max-w-5xl">
 
-          <h1 className="mt-8 text-5xl font-bold leading-tight md:text-7xl">
-            Build Smarter.
-            <br />
-            Scale Faster.
-          </h1>
+    <div className="flex justify-center mb-8">
+      <Image
+        src="/logo.png"
+        alt="ZynapX Logo"
+        width={220}
+        height={220}
+        priority
+      />
+    </div>
 
-          <p className="mx-auto mt-8 max-w-2xl text-lg text-gray-400">
-            ZynapX membantu bisnis dan startup membangun solusi AI,
-            mengotomatisasi workflow, dan mengembangkan produk digital
-            yang siap tumbuh.
-          </p>
+    <p className="mb-4 text-sm uppercase tracking-widest text-cyan-400">
+      AI • Automation • SaaS
+    </p>
 
-          <div className="mt-10 flex flex-col justify-center gap-4 sm:flex-row">
-            <button className="rounded-xl bg-white px-8 py-3 font-semibold text-black">
-              Get Started
-            </button>
+    <h1 className="text-5xl font-bold md:text-7xl">
+      Build the Future with ZynapX
+    </h1>
 
-            <button className="rounded-xl border border-gray-700 px-8 py-3">
-              View Services
-            </button>
-          </div>
-        </div>
-      </section>
+    <p className="mx-auto mt-6 max-w-2xl text-lg text-gray-400">
+      Kami membantu bisnis membangun solusi AI, otomatisasi proses,
+      dan produk digital modern.
+    </p>
+  </div>
+</section>
 
       {/* Stats */}
       <section className="mx-auto grid max-w-6xl gap-6 px-6 pb-24 md:grid-cols-3">
