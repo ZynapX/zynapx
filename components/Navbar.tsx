@@ -7,7 +7,7 @@ export default function Navbar() {
   const [open, setOpen] = useState(false);
 
   return (
-    <nav className="sticky top-0 z-50 border-b border-gray-800 bg-black/80 backdrop-blur">
+    <nav className="sticky top-0 z-50 border-b border-gray-800 bg-black/90 backdrop-blur">
       <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4">
 
         <div className="flex items-center gap-3">
@@ -22,32 +22,29 @@ export default function Navbar() {
           </span>
         </div>
 
-        <div className="hidden md:flex items-center gap-8 text-sm text-gray-300">
+        <div className="hidden md:flex gap-8 text-gray-300">
           <a href="#services">Services</a>
-          <a href="#about">About</a>
+          <a href="#portfolio">Portfolio</a>
           <a href="#contact">Contact</a>
         </div>
 
-        <button className="hidden md:block rounded-xl bg-white px-5 py-2 font-semibold text-black">
-          Get Started
+        <button
+          onClick={() => setOpen(!open)}
+          className="text-3xl text-white md:hidden"
+        >
+          {open ? "✕" : "☰"}
         </button>
 
-        <button
-          className="text-2xl text-white md:hidden"
-          onClick={() => setOpen(!open)}
-        >
-          ☰
-        </button>
       </div>
 
       {open && (
         <div className="border-t border-gray-800 bg-black md:hidden">
-          <div className="flex flex-col px-6 py-4 text-gray-300">
-            <a href="#services" className="py-2">Services</a>
-            <a href="#about" className="py-2">About</a>
-            <a href="#contact" className="py-2">Contact</a>
+          <div className="flex flex-col gap-4 p-6 text-white">
+            <a href="#services">Services</a>
+            <a href="#portfolio">Portfolio</a>
+            <a href="#contact">Contact</a>
 
-            <button className="mt-4 rounded-xl bg-white px-5 py-2 font-semibold text-black">
+            <button className="rounded-xl bg-white px-4 py-2 font-semibold text-black">
               Get Started
             </button>
           </div>

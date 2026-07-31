@@ -80,10 +80,52 @@ export default function Home() {
               <p className="mt-4 text-gray-400">
                 Pengembangan aplikasi web modern yang scalable dan cepat.
               </p>
-            </div>
+             </div>
           </div>
         </div>
       </section>
+
+      {/* Portfolio */}
+<section id="portfolio" className="px-6 pb-24">
+  <div className="mx-auto max-w-6xl">
+    <h2 className="mb-12 text-center text-4xl font-bold">
+      Featured Projects
+    </h2>
+
+    <div className="grid gap-6 md:grid-cols-3">
+      <div className="rounded-2xl border border-gray-800 p-8">
+        <h3 className="text-2xl font-semibold">
+          AI Customer Support
+        </h3>
+
+        <p className="mt-4 text-gray-400">
+          Sistem AI chatbot untuk membantu pelanggan 24/7.
+        </p>
+      </div>
+
+      <div className="rounded-2xl border border-gray-800 p-8">
+        <h3 className="text-2xl font-semibold">
+          Business Automation
+        </h3>
+
+        <p className="mt-4 text-gray-400">
+          Workflow otomatis untuk mengurangi pekerjaan manual.
+        </p>
+      </div>
+
+      <div className="rounded-2xl border border-gray-800 p-8">
+        <h3 className="text-2xl font-semibold">
+          SaaS Platform
+        </h3>
+
+        <p className="mt-4 text-gray-400">
+          Platform web modern dengan performa tinggi.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
 
       {/* About */}
       <section id="about" className="border-t border-gray-800 px-6 py-24">
