@@ -54,7 +54,7 @@ export default function Home() {
       </section>
 
      {/* Services */}
-      <section className="px-6 pb-24">
+      <section id="services" className="px-6 pb-24">
         <div className="mx-auto max-w-6xl">
           <h2 className="mb-12 text-center text-4xl font-bold">
             Our Services
@@ -86,7 +86,7 @@ export default function Home() {
       </section>
 
       {/* About */}
-      <section className="border-t border-gray-800 px-6 py-24">
+      <section id="about" className="border-t border-gray-800 px-6 py-24">
         <div className="mx-auto max-w-4xl text-center">
           <h2 className="text-4xl font-bold">Why ZynapX?</h2>
 
@@ -98,7 +98,7 @@ export default function Home() {
       </section>
 
       {/* CTA */}
-      <section className="px-6 pb-24">
+      <section id="contact" className="px-6 pb-24">
         <div className="mx-auto max-w-5xl rounded-3xl border border-gray-800 p-12 text-center">
           <h2 className="text-4xl font-bold">
             Ready to Build the Future?
